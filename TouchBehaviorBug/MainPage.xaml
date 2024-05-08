@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TouchBehaviorBug.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:touchBehaviorBug="clr-namespace:TouchBehaviorBug"
+    x:Name="This"
+    x:DataType="touchBehaviorBug:MainPageViewModel"
+    Shell.BackgroundColor="LightGray">
+
+    <Grid RowDefinitions="Auto, *">
+        <VerticalStackLayout Grid.Row="0">
+            <Label
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="TouchBehavior Bug"
+                VerticalOptions="Center" />
+            <Label
+                HorizontalOptions="Center"
+                Text="{Binding TouchedElement}"
+                VerticalOptions="Center" />
+        </VerticalStackLayout>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Items}">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout ItemSpacing="4" Orientation="Vertical" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout
+                        Padding="6"
+                        BackgroundColor="LightGray"
+                        HeightRequest="50">
+                        <Label Text="{Binding .}" />
+                        <VerticalStackLayout.Behaviors>
+                            <toolkit:TouchBehavior Command="{Binding Source={x:Reference This}, Path=BindingContext.ItemTapCommandCommand}" CommandParameter="{Binding .}" />
+                        </VerticalStackLayout.Behaviors>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchBehaviorBug", "TouchBehaviorBug\TouchBehaviorBug.csproj", "{A03B12D1-447C-49E9-B4BE-E15B53816080}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A03B12D1-447C-49E9-B4BE-E15B53816080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03B12D1-447C-49E9-B4BE-E15B53816080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03B12D1-447C-49E9-B4BE-E15B53816080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03B12D1-447C-49E9-B4BE-E15B53816080}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

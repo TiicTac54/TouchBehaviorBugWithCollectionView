@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="TouchBehaviorBug.app/TouchBehaviorBug">
+      <BCSymbolMapName>TouchBehaviorBug.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>TouchBehaviorBug.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/pieriklandry/OtherProjects/TouchBehaviorBug/TouchBehaviorBug/obj/Debug/net8.0-ios/iossimulator-arm64/mtouch-symbols.list</SymbolFile>
+      <DSymName>TouchBehaviorBug.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/pieriklandry/OtherProjects/TouchBehaviorBug/TouchBehaviorBug</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

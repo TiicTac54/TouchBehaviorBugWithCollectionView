@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/pieriklandry/OtherProjects/TouchBehaviorBug/TouchBehaviorBug/bin/Debug/net8.0-ios/iossimulator-arm64/TouchBehaviorBug.app/libSystem.IO.Compression.Native.dylib
